@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Tie
 %define	pnam	DB_Lock
-Summary:	Tie-DB_Lock perl module
-Summary(pl):	Modu³ perla Tie-DB_Lock
+Summary:	Tie::DB_Lock perl module
+Summary(pl):	Modu³ perla Tie::DB_Lock
 Name:		perl-Tie-DB_Lock
 Version:	0.05
 Release:	8
@@ -15,10 +15,10 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Tie-DB_Lock perl module.
+Tie::DB_Lock perl module.
 
 %description -l pl
-Modu³ perla Tie-DB_Lock.
+Modu³ perla Tie::DB_Lock.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
