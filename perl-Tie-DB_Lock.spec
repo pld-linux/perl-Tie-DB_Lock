@@ -28,7 +28,7 @@ przy u¿yciu blokad wspó³dzielonych i wy³±cznych.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %install
