@@ -1,3 +1,7 @@
+#
+# Conditional build:
+%bcond_without	tests	# do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Tie
 %define	pnam	DB_Lock
@@ -6,7 +10,8 @@ Summary(pl):	Modu³ Perla Tie::DB_Lock - zwi±zanie haszy z bazami danych przy u¿y
 Name:		perl-Tie-DB_Lock
 Version:	0.07
 Release:	2
-License:	GPL
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	1f1c9d69e6064c53a5df9fe4072f62e5
@@ -31,10 +36,13 @@ przy u¿yciu blokad wspó³dzielonych i wy³±cznych.
 	INSTALLDIRS=vendor
 %{__make}
 
+%{?with_tests:%{__make} test}
+
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
