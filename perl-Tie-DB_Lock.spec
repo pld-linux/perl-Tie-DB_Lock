@@ -5,12 +5,12 @@ Summary:	Tie::DB_Lock - ties hashes to databases using shared and exclusive lock
 Summary(pl):	Modu³ Tie::DB_Lock - wi±¿±cy hasze z bazami danych przy u¿yciu blokad
 Name:		perl-Tie-DB_Lock
 Version:	0.07
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -26,7 +26,8 @@ przy u¿yciu blokad wspó³dzielonych i wy³±cznych.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 
 %install
@@ -40,5 +41,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%{perl_sitelib}/Tie/DB_Lock.pm
+%{perl_vendorlib}/Tie/DB_Lock.pm
 %{_mandir}/man3/*
