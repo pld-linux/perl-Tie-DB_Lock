@@ -1,8 +1,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Tie
 %define	pnam	DB_Lock
-Summary:	Tie::DB_Lock perl module
-Summary(pl):	Modu³ perla Tie::DB_Lock
+Summary:	Tie::DB_Lock - ties hashes to databases using shared and exclusive locks
 Name:		perl-Tie-DB_Lock
 Version:	0.05
 Release:	8
@@ -15,10 +14,7 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Tie::DB_Lock perl module.
-
-%description -l pl
-Modu³ perla Tie::DB_Lock.
+This is a front-end for the DB_File package.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
