@@ -4,8 +4,8 @@
 Summary:	Tie::DB_Lock - ties hashes to databases using shared and exclusive locks
 Summary(pl):	Modu³ Tie::DB_Lock - wi±¿±cy hasze z bazami danych przy u¿yciu blokad
 Name:		perl-Tie-DB_Lock
-Version:	0.05
-Release:	10
+Version:	0.07
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
