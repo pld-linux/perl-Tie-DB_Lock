@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	Tie
 %define	pnam	DB_Lock
-%include	/usr/lib/rpm/macros.perl
 Summary:	Tie-DB_Lock perl module
 Summary(pl):	Modu³ perla Tie-DB_Lock
 Name:		perl-Tie-DB_Lock
 Version:	0.05
-Release:	7
-
+Release:	8
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -22,7 +21,7 @@ Tie-DB_Lock perl module.
 Modu³ perla Tie-DB_Lock.
 
 %prep
-%setup -q -n Tie-DB_Lock-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL
