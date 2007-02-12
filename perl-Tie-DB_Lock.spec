@@ -6,7 +6,7 @@
 %define		pdir	Tie
 %define		pnam	DB_Lock
 Summary:	Tie::DB_Lock Perl module - ties hashes to databases using shared and exclusive locks
-Summary(pl):	Modu³ Perla Tie::DB_Lock - zwi±zanie haszy z bazami danych przy u¿yciu blokad
+Summary(pl.UTF-8):   ModuÅ‚ Perla Tie::DB_Lock - zwiÄ…zanie haszy z bazami danych przy uÅ¼yciu blokad
 Name:		perl-Tie-DB_Lock
 Version:	0.07
 Release:	2
@@ -24,9 +24,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 This is a front-end for the DB_File package. It ties hashes to
 databases using shared and exlusive locks.
 
-%description -l pl
-Ten pakiet jest frontendem do DB_File. Wi±¿e hasze z bazami danych
-przy u¿yciu blokad wspó³dzielonych i wy³±cznych.
+%description -l pl.UTF-8
+Ten pakiet jest frontendem do DB_File. WiÄ…Å¼e hasze z bazami danych
+przy uÅ¼yciu blokad wspÃ³Å‚dzielonych i wyÅ‚Ä…cznych.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
