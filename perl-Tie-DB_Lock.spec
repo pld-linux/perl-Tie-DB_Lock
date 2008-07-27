@@ -9,7 +9,7 @@ Summary:	Tie::DB_Lock Perl module - ties hashes to databases using shared and ex
 Summary(pl.UTF-8):	Moduł Perla Tie::DB_Lock - związanie haszy z bazami danych przy użyciu blokad
 Name:		perl-Tie-DB_Lock
 Version:	0.07
-Release:	2
+Release:	3
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
