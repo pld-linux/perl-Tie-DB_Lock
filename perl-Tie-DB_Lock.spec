@@ -4,7 +4,6 @@
 
 %define		pdir	Tie
 %define		pnam	DB_Lock
-%include	/usr/lib/rpm/macros.perl
 Summary:	Tie::DB_Lock Perl module - ties hashes to databases using shared and exclusive locks
 Summary(pl.UTF-8):	Moduł Perla Tie::DB_Lock - związanie haszy z bazami danych przy użyciu blokad
 Name:		perl-Tie-DB_Lock
